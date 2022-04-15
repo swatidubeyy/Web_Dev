@@ -14,3 +14,17 @@ variable declaration with LET -->> (let a = 2)
 
 
 variable declaration with CONST -->> (const a = 2)
+                                    Doesn't allow reasign of variables. ( if const a = 2 then you can't reasign a = " Hello " ).
+                                    
+                                    And where you are writing const you have to assign value there(Because it's by default contains 'Undefind value' so, 
+                                    if you will not assign then after that you can't resign const also , so it will remain undefined)
+                                    
+ **************************************************************************** Note ****************************************************************************
+Reassign ---->
+             let a = 2 ;
+             a = 5;
+
+Redeclare ---->
+               var a = 2;
+               var a = 5;
+           
