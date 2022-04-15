@@ -1,0 +1,20 @@
+**********************************************************************************************************************************************************************
+
+An array is a special variable, which can hold more than one value.( const cars = ["Saab", "Volvo", "BMW"]; )
+
+An array is a special type of variable, which can store multiple values using special syntax.
+Every value is associated with numeric index starting with 0. 
+
+
+An array in JavaScript can be defined and initialized in two ways -->>>
+
+              1) array literal -->>> 
+                                      var <array-name> = [element0, element1, element2,... elementN];
+                                      It takes a list of values separated by a comma and enclosed in square brackets.
+
+              2) Array constructor -->>> 
+                                      var arrayName = new Array();
+                                      var arrayName = new Array(Number length);
+                                      var arrayName = new Array(element1, element2, element3,... elementN);
+                                      
+                                      You can initialize an array with Array constructor syntax using new keyword.
