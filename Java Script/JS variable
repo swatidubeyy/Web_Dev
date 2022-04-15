@@ -1,0 +1,16 @@
+
+JavaScript variables are containers for storing data values. 
+First the variable is initialized automatically by Undefined.
+
+variable declaration with VAR -->> (var a =  2)
+                             var keyword has many problems -->> 
+                                    1) It can accidentally overwrite an existing global variable(that means we can redeclare a single var many times).
+                                    2) Function scoping and block scoping ( that means it can be dangerous that we can access and redeclare variable ,
+                                       we can print the value of variable which is in loop or control statement or function ).
+
+
+variable declaration with LET -->> (let a = 2)
+                              Doesn't allow redeclaration of variables.
+
+
+variable declaration with CONST -->> (const a = 2)
