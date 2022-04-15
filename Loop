@@ -1,0 +1,38 @@
+The JavaScript loops are used to iterate the piece of code using for, while, do while or for-in loops. 
+It makes the code compact. It is mostly used in array.
+
+There are four types of loops in JavaScript.
+1). for loop -->> The JavaScript for loop iterates the elements for the fixed number of times. It should be used if number of iteration is known.
+                  for (initialization; condition; increment){  
+                      code to be executed  
+                  }  
+
+2). while loop -->> The JavaScript while loop iterates the elements for the infinite number of times. It should be used if number of iteration is not known. 
+                    while (condition) {  
+                        code to be executed  
+                    }  
+
+3). do-while loop -->> The JavaScript do while loop iterates the elements for the infinite number of times like while loop. 
+                       But, code is executed at least once whether condition is true or false. 
+                       do{  
+                          code to be executed  
+                      }while (condition);  
+
+
+4). for-in loop -->> The JavaScript for in loop is used to iterate the properties of an object.
+
+
+for example :-- Check whether the no is prime or not -->>>
+                                                      var flag = true;
+                                                      var n = 11;
+                                                      for(let i = 2 ; i < n ;i++){
+                                                          if(n % i == 0){
+                                                              flag = false;
+                                                              break
+                                                          }
+                                                      }
+                                                      if(flag){
+                                                          console.log('prime');
+                                                      }else{
+                                                          console.log("not prime")
+                                                      }
