@@ -1,0 +1,84 @@
+*************************************************************************** String ************************************************************************************
+
+The JavaScript string is an object that represents a sequence of characters.
+JavaScript strings are for storing and manipulating text.
+JavaScript string is a primitive data type that is used to work with texts. 
+
+There are 2 ways to create string in JavaScript --->>
+
+                          1 ) By string literal -- >>> var stringname="string value";  
+
+                          2 ) By string object (using new keyword) -- >> var stringname=new String("string literal");  
+                          
+
+
+************************************************************************ String Methods ********************************************************************************
+
+
+length ---->>>
+        It provides the length of String.
+        
+charAt( idx ) ---->>>
+        It provides the char value present at the specified index.
+        
+1st str.concat( ' ',2nd str )---->>>
+      It provides a combination of two or more strings.
+
+str.toUpperCase()---->>>
+      It converts the given string into uppercase letter.
+      
+str.toLowerCase()---->>>
+      It converts the given string into lowercase letter.      
+      
+replace('old word','new word')---->>>
+               It replaces a given string with the specified replacement.
+               where 'old word ' >>> which u want to repace and 'new word ' >>>> which is going to replace.
+      
+substr( 1st idx , Length)---->>>
+      It is used to fetch the part of the given string on the basis of the specified starting position and length (length = how many index ypu want from starting).
+      
+substring()---->>>
+      It is used to fetch the part of the given string on the basis of the specified index.
+      
+slice( 1st idx , Last idx + 1)---->>>
+      It is used to fetch the part of the given string. It allows us to assign positive as well negative index.
+      Last index is excluded.
+      
+indexOf()---->>>
+      It provides the position of a char value present in the given string.
+
+toString()---->>>
+      It provides a string representing the particular object.
+      
+split()	---->>>
+      It splits a string into substring array, then returns that newly created array.
+      
+trim()---->>>
+      It trims the white space from the left and right side of the string not removes white space between words.
+      
+lastIndexOf()---->>>
+      It provides the position of a char value present in the given string by searching a character from the last position.
+      
+toLocaleLowerCase()---->>>
+      It converts the given string into lowercase letter on the basis of host?s current locale.
+      
+toLocaleUpperCase()---->>>
+      It converts the given string into uppercase letter on the basis of host?s current locale.
+           
+valueOf()---->>>
+      It provides the primitive value of string object.
+           
+charCodeAt() ---->>>
+            It provides the Unicode value of a character present at the specified index.      
+
+search()---->>>
+      It searches a specified regular expression in a given string and returns its position if a match occurs.
+      
+match()---->>>
+      It searches a specified regular expression in a given string and returns that regular expression if a match occurs.
+      
+      
+      
+      
+      
+      
