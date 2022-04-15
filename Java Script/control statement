@@ -1,0 +1,28 @@
+Javascript control statement is used to control the flow of program based on the specified condition.
+
+1). If Statement -->> If statement is used to execute a block of statements if specified condition is true.
+
+
+2). If else statement -->> If else statement is used to execute either of two block of statements depends upon the condition. 
+                           If condition is true then if block will execute otherwise else block will execute.
+
+
+3). if else if statement -->> If else statement is used to execute one block of statements from many depends upon the condition. 
+                              If condition1 is true then block of statements1 will be executed, else if condition2 is true block of statements2 is executed and so on.
+                              If no condition is true, then else block of statements will be executed.
+
+
+For example -->>> 
+                let num=3;  
+                if(num==1){  
+                    console.log("JavaScript Statement 1");  
+                }  
+                else if(num==2){  
+                    console.log("JavaScript Statement 2");  
+                }  
+                else if(num==3){  
+                    console.log("JavaScript Statement 3");  
+                }  
+                else{  
+                    console.log("JavaScript Statement n");  
+                } 
