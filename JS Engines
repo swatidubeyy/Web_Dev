@@ -1,0 +1,9 @@
+A JavaScript engine is a software component that executes JavaScript code.
+V8 from Google is the most used JavaScript engine.
+The first JavaScript engines were mere interpreters, but all relevant modern engines use just-in-time compilation for improved performance.
+JavaScript engines are embedded in browsers and web servers, such as Node.js to allow run-time compilation and execution of JavaScript code. 
+Google’s V8: It is an open-source JavaScript engine that was developed by The Chromium Project for Google Chrome and Chromium web browsers.
+different browser have their own js engins -->> 
+                                              Chrome - V8
+                                              Firefox - Spider Monkey
+                                              Internet Explorer - Chakra
