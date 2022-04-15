@@ -1,0 +1,17 @@
+The programs in this language are called scripts.
+
+They can be written right in a web page’s HTML and run automatically as the page loads.
+
+Scripts are provided and executed as plain text.
+
+JS is a Synchronus langauge ( Line by line ) and single threded langauge (which means only one statement is executed at a time.).
+
+JS is a Dynamic langauge (Being able to change the underlying type of a variable while the program is running without causing an error 
+is what makes JavaScript a dynamic language. This behavior comes with both benefits and drawbacks. that means in js we don't need to define type of variable like 
+int, float etc and here we can reasign values).
+
+They don’t need special preparation or compilation to run.
+In this aspect, JavaScript is very different from another language called Java.
+
+The first JavaScript engine was created by Brendan Eich in 1995 for the Netscape Navigator web browser.
+It was a rudimentary interpreter for the nascent language Eich invented.(This evolved into the SpiderMonkey engine, still used by the Firefox browser.)
