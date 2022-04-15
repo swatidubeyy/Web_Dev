@@ -1,0 +1,122 @@
+ *********************************************************************************************************************************************************************
+
+
+A function is a set of statements that take inputs, do some specific computation, and produces output. 
+Basically, a function is a set of statements that performs some tasks or does some computation and then return the result to the user.
+
+The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again
+and again for different inputs, we can call that function.
+
+Function can return values.
+
+
+
+Below are the rules for creating a function in JavaScript:---->>>
+
+            Every function should begin with the keyword function followed by,
+            A user defined function name which should be unique,
+            A list of parameters enclosed within parenthesis and separated by commas,
+            A list of statement composing the body of the function enclosed within curly braces {}.
+
+Syntax --->>>
+            
+          function calcAddition(number1, number2)
+          {
+            return number1 + number2;
+          }
+            
+       
+Function parameters --->>>>> are the names listed in the function definition. 
+Function arguments --->>>>>> are the real values passed to (and received by) the function. 
+
+
+For example -->>> The given program returns 8 .
+
+ 1.)        function add(a , b){                                            
+                console.log(a+b);
+            }                                  //fun declaration 
+            add(4,4)                          // function invokation
+            
+2.)        function add(a , b){                                            
+                return console.log(a+b);     // with return
+            }                                
+            add(4,4)            
+            
+3.)         function sayHii(){              // without parameter
+                console.log("Hii")
+            }
+            sayHii()
+       
+ *********************************************************************************************************************************************************************
+       
+            
+Immediately Invoked Functions Expressions --->>>>
+
+                                In this we can immediately invoke function with declaration, we don't need to invoke in the last.
+                                
+                                A function created with a function declaration is a Function object and has all the properties,
+                                methods and behavior of Function objects. 
+                          
+                                A soon as function is created it invokes itself doesn’t need to invoke explicitly.
+                                In the below example variable iife will store a string that is returned by the function execution.
+
+
+Syntax -->>            var iife = function (){
+                          return 'Immediately Invoked Function Expressions(IIFEs) example ';
+                       }();
+                        console.log(iife);                                     // 'Immediately Invoked Function Expressions(IIFEs) example '   
+
+
+
+For example -->> 
+                       let sayHii = function(a,b){
+                           console.log(a+b);
+                       }(2,8)                                                        // output = 10
+                        
+            
+            
+ 
+ 
+ *********************************************************************************************************************************************************************
+
+Functions treated as first class citizens in Java Script --->>>   
+
+              You can create functions as variable in js (that means we can write fun in the variable).  
+              
+              In Javascript we are lucky. We get the ability to pass functions around, our functions can even return functions.
+              
+              In programming languages, when you are able to pass, return and assign a type, that type is considered to be a first class citizen [source]. 
+              This is one reason Javascript is becoming a popular destination for functional programming.
+              Since we are able to create functions that can accept functions as well as return functions. 
+              This allows us to create Higher Order Functions.
+              Higher Order Functions are functions that accept a function, and/or return a function [source].
+
+for example -->> 
+                let sayHii = function(a,b){
+                    console.log(a+b);
+                }                         //This type of function is also called anonymous function coz it has no name
+                sayHii(2,8)
+            
+            
+ *********************************************************************************************************************************************************************
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
