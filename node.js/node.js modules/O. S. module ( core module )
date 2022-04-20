@@ -1,0 +1,49 @@
+
+The OS module provides information about the computer's operating system.
+This module is used to get details about an OS of the machine
+
+
+What is the use of the OS module? --->>>
+                                      The OS module provides information about the computer's operating system. 
+                                      Returns an object containing the operating system's constants for process signals, error cotes etc.
+
+
+
+To requre ---->>> const os = require('os') 
+
+console.log(os.arch()) ---->>> tells about the system Architecture (32 or 64 bit)
+
+console.log(os.platform()) ---->>> tells about the Platform
+
+console.log(os.networkInterfaces()) ---->>> gives details about the Network you are in
+
+console.log(os.cpus()) ---->>> gives details about the CPU
+
+
+
+
+to know in detail  ------->>>>>>
+                                constants ---->>> Returns an object containing the operating system's constants for process signals, error cotes etc.
+
+                                endianness() ---->>> Returns the endianness of the CPU
+
+                                EOL ---->>> Returns the end-of-line marker for the current operating system
+
+                                freemem() ---->>> Returns the number of free memory of the system
+
+                                hostname() ---->>> Returns the hostname of the operating system
+
+                                loadavg() ---->>> Returns an array containing the load averages, (1, 5, and 15 minutes)
+
+                                release() ---->>> Returns information about the operating system's release
+
+                                tmpdir() ---->>> Returns the operating system's default directory for temporary files
+
+                                totalmem()	Returns the number of total memory of the system
+
+                                type() ---->>> Returns the name of the operating system
+
+                                uptime() ---->>> Returns the uptime of the operating system, in seconds
+
+                                userInfo() ---->>> Returns information about the current user
+
