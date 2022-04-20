@@ -1,0 +1,120 @@
+**********************************************************************************files system module*********************************************************************************
+
+
+The Node.js file system module allows you to work with the file system on your computer.
+
+To include the File System module, use the require() method:
+var fs = require('fs');
+
+
+Common use for the File System module:---->>>>
+                                              Read files
+                                              Create files
+                                              Update files
+                                              Delete files
+                                              Rename files
+
+
+
+
+**********************************************************************************files*********************************************************************************
+we will be reading, writing , updating , deleting files from our script
+
+const fs = require('fs')
+
+reading --->>>>>
+                readFileSync is a method top read a file.
+                let content = fs.readFileSync('f1.txt')
+                console.log('This is F1 data-> '+ content)
+                
+
+writing to a file --->> 
+                      writeFileSync method is used to put data(write) to a file
+                      if the file passed doent exist it creates a new file and writes to it
+                      fs.writeFileSync('f2.txt' , 'Hello from F2')
+
+
+append a file ---->>>>>>
+                        append file sync adds data to the previously written file , basically it appnends a file with new data passed.
+                        fs.appendFileSync('f2.txt' , ' this is F2 data')
+
+
+unlinkSync (delete) --->>>
+                        delete a file by passing it's path
+                        fs.unlinkSync('f2.txt')
+                        console.log('File Removed')
+
+
+
+
+
+********************************************************************************** Directories ************************************************************************
+
+
+create ----->>>>>
+                mkdirSync is used to create a new directory
+                fs.mkdirSync('myDirectory')
+                
+
+delete ----->>>>>
+                rmdirSync is used to remove or delete a directory
+                fs.rmdirSync('myDirectory')
+                
+
+doesExist ----->>>>>
+                to check whether a directory exists or not we can us existsSync methodif the directory exists the method returns true otherwise false
+                let doesExist = fs.existsSync('myDirectory')
+                console.log(doesExist)
+                
+
+
+
+
+********************************************************************************** Directories ************************************************************************
+
+
+
+
+
+const path = require('path') 
+
+to get details of folder ---->>>>
+                              stats of a path (details of a folder)
+                              lstatsync provides us with all the statistics of a directory
+                              let statsofPath = fs.lstatSync('myDirectory')
+                              console.log(statsofPath)
+                              
+                              
+to check is file or not --->>>>>                               
+                              isFile is a metnod that checks wheter a passed path is a file or not
+                              console.log('isFile?' ,statsofPath.isFile()) 
+
+to check is directory or not ---->>>>>>>>>>
+                                    isDirectory that checks wheter a passed path is a directory or not
+                                    console.log('isDirectory' , statsofPath.isDirectory()) 
+
+to check content of a path ---->>>
+                                readdirSync method is used to check the content of a particular directory
+                                let folderPath = 'D:\\FJP2 Dev\\Node Modules\\myDirectory'
+                                let folderContent = fs.readdirSync(folderPath)
+                                console.log('directory content '+ folderContent)
+
+
+
+copy files --------->>>>>>>>>>
+                              here, we need src file and  destFolder
+                              let srcFilePath = 'D:\\FJP2 Dev\\Node Modules\\myDirectory\\f3.txt'
+                              let destFolder = 'D:\\FJP2 Dev\\Node Modules\\myDirectory2\\'
+                              let tobecopiedFileName = path.basename(srcFilePath)
+                              console.log(tobecopiedFileName) // o/p =  f3.txt
+                              
+                              basename method gets the actual name of the file or directory
+                              
+                              let destPath = path.join(destFolder , tobecopiedFileName)
+                              console.log(destPath)
+
+                              fs.copyFileSync(srcFilePath , destPath)
+                              console.log("file Copied")
+
+
+
