@@ -1,0 +1,48 @@
+
+****************************************************************************child_process*****************************************************************************
+
+
+child process is a node module used to create subprocess within a script to perform different tasks
+ 
+Node.js is a web development framework that offers a variety of modules to work with.
+Usually, Node.js allows single-threaded, non-blocking performance but running a single
+thread in a CPU cannot handle increasing workload hence the child_process module can be used 
+to spawn child processes. The child processes communicate with each other using a built-in messaging system.
+
+The following are the four different ways to create a child process in Node.js:--
+                                                                                spawn() method
+                                                                                fork() method
+                                                                                exec() method
+                                                                                execFile() method
+                                                                                execSync() method
+
+
+****************************************************************************execSync() method*****************************************************************************
+
+execSync is a child Process method used to execute files 
+ 
+
+to open vs code ---->>>>
+                       const cp =  require('child_process')
+                       console.log('Trying to open Calculator')
+                       cp.execSync('calc') 
+                       console.log('Calculator Opened') 
+
+
+to open vs code ---->>>>
+                        console.log('Trying to open Vs Code')
+                        cp.execSync('code')
+                        console.log('Vs code Opened')
+
+to open any browser ---->>>>
+                       cp.execSync('start chrome')
+
+to open any website ---->>>>
+                       cp.execSync('start chrome https://www.pepcoding.com/')
+
+to execute code of other file-->>>
+                               let output = cp.execSync('node test.js')
+                               console.log(''+ output) // you can concat with an empty string as well
+
+ 
+
