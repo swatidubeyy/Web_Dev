@@ -38,7 +38,7 @@ some imp core modules --->>>
 
 Unlike built-in and external modules, local modules are created locally in your Node.js application. 
 Let’s create a simple calculating module that calculates various operations. Create a calc.js file that has the following code:
-
+exampe --->>>> Import - export
 
 
 *********************************************************************************Third-party modules*********************************************************************
