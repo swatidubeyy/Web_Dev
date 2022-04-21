@@ -116,5 +116,24 @@ copy files --------->>>>>>>>>>
                               fs.copyFileSync(srcFilePath , destPath)
                               console.log("file Copied")
 
+extname ---->>>
+                extname is a function that will get the extension from the path of a file
+                let ext = path.extname('D:\\FJP2 Dev\\Node Modules\\f1.txt')
+                console.log('Extention of the file -> ', ext)
+
+
+Base name ----->>>>
+                basename is a function that will get the actual name of the file or a folder from it's path
+                let basename = path.basename('D:\\FJP2 Dev\\Node Modules\\f1.txt')
+                console.log('basename of the file -> ',basename)
+
+dirName --->>>
+                gets you the path of the current Directory you are in
+                console.log(__dirname)
+                
+                
+fileName --->>> 
+                gets you the path of the current file you are in 
+                console.log(__filename)// gets you the path of the current file you are in 
 
 
