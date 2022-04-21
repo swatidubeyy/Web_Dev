@@ -1,0 +1,69 @@
+*********************************************************************Import - export***********************************************************************************
+
+
+Importing and exporting files are important parts of any programming language.
+Importing functions or modules enhances the reusability of code.
+When the application grows in size, maintaining a single file with all the functions and logic becomes difficult.
+It also hinders the process of debugging. Therefore, 
+it is good practice to create separate files for specific functions and later import them as per requirement.
+
+
+Node.js also allows importing and exporting functions and modules.
+Functions in one module can be imported and called in other modules saving the effort to copy function definitions into the other files.
+The module can be edited or debugged separately making it easier to add or remove features.
+
+
+
+*************************************************************Steps to include functions from other files***************************************************************
+
+
+
+Creating a Module:  --->>
+                        Modules are created in Node.js are JavaScript files. 
+                        Every time a new file with .js extension is created, it becomes a module.
+                        
+                        
+Exporting a Module:---->> 
+                        Filename: func.js
+                        
+                        function add(x, y) {
+                           return x + y;
+                        }
+                        function subtract(x, y) {
+                           return x - y;
+                        }
+
+                        Adding the code below to allow importing the functions in other files
+                        module.exports = { add }
+                        
+                        
+Importing a Module: --->>>
+                        We need to import the module to use the functions defined in the imported module in another file. 
+                        The result returned by require() is stored in a variable which is used to invoke the functions using the dot notation.
+                        
+                        Filename: main.js
+                        const f = require('./func');  
+                        const result = f.add(10, 5);  
+                        console.log('The result is:', result);
+
+
+***************************************************************There are three types of modules in Node.js**************************************************************
+
+
+Importing from local module: --->>> 
+                                  These modules are created by the user and can be imported as:
+                                  const var = require('./filename.js'); // OR
+                                  const var = require('./path/filename.js');
+                                  
+                                  
+Importing from core modules:---->>>>
+                                  These modules are inbuilt in Node.js and can be imported as:
+                                  const var = require('fs');
+                                  
+                                  
+Importing from third party modules:
+                                  These modules are installed using a package manager such as npm. 
+                                  Examples of third party modules are express, mongoose, nodemon, etc. These are imported as:
+                                  const express = require('express');
+
+
