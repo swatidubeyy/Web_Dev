@@ -1,5 +1,6 @@
 
 ***********************************************************************Type1************************************************************************************************
+It will give only 2nd intex ----->>>>
 
 let input = process.argv[2]
 console.log(input)
@@ -16,6 +17,8 @@ Node js treats command line input as an array and now let input = process.argv.s
 
 
 ***********************************************************************Type1************************************************************************************************
+
+It will give you all values on index after 2 . 
 
 let input = process.argv.slice(2)
 console.log(input) 
