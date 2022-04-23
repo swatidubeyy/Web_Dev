@@ -1,10 +1,23 @@
 
+***********************************************************************Type1************************************************************************************************
+
 let input = process.argv[2]
 console.log(input)
+
+output ---->> Orgenize
 
 Why 2 is in array ----->>>
               Because we can put input at the second index only as we know that---->>>>>>
                                                                                           0th index will be node
                                                                                           1st index will be file name which will be going to be executed.
                                                                                           2nd index for our input which we want
-Node js treats command line input as an array and that array is your process array.
+Node js treats command line input as an array and now let input = process.argv.slice(2)that array is your process array.
+
+
+
+***********************************************************************Type1************************************************************************************************
+
+let input = process.argv.slice(2)
+console.log(input) 
+
+output --->>> [ 'Orgenize' ]
