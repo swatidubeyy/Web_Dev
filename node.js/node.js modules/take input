@@ -7,3 +7,4 @@ Why 2 is in array ----->>>
                                                                                           0th index will be node
                                                                                           1st index will be file name which will be going to be executed.
                                                                                           2nd index for our input which we want
+Node js treats command line input as an array and that array is your process array.
