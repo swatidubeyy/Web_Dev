@@ -3,21 +3,41 @@ The JavaScript loops are used to iterate the piece of code using for, while, do 
 It makes the code compact. It is mostly used in array.
 
 There are four types of loops in JavaScript.
+
+
+************************************************************************for loop***********************************************************************************
+
+
 1). for loop -->> The JavaScript for loop iterates the elements for the fixed number of times. It should be used if number of iteration is known.
                   for (initialization; condition; increment){  
                       code to be executed  
                   }  
+
+************************************************************************while loop***********************************************************************************
+
+
 
 2). while loop -->> The JavaScript while loop iterates the elements for the infinite number of times. It should be used if number of iteration is not known. 
                     while (condition) {  
                         code to be executed  
                     }  
 
+
+
+************************************************************************do-While loop***********************************************************************************
+
+
+
 3). do-while loop -->> The JavaScript do while loop iterates the elements for the infinite number of times like while loop. 
                        But, code is executed at least once whether condition is true or false. 
                        do{  
                           code to be executed  
                       }while (condition);  
+
+
+
+************************************************************************for-in loop***********************************************************************************
+
 
 
 4). for-in loop -->> The JavaScript for in loop is used to iterate the properties of an object.
@@ -37,3 +57,40 @@ for example :-- Check whether the no is prime or not -->>>
                                                       }else{
                                                           console.log("not prime")
                                                       }
+
+
+
+
+************************************************************************for-of loop***********************************************************************************
+
+
+5).The For Of Loop --->>>>>
+                      The JavaScript for of statement loops through the values of an iterable object.
+                      It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+
+                Syntax ----->>>>>
+                                for (variable of iterable) {
+                                  // code block to be executed
+                                }
+                                
+                                where,
+                                variable - For every iteration the value of the next property is assigned to the variable.
+                                Variable can be declared with const, let, or var.
+                                
+                                iterable - An object that has iterable properties.
+                                
+                Exaples --->>> 1) Looping over an Array --->>>
+                                                              const cars = ["BMW", "Volvo", "Mini"];
+                                                              let text = "";
+                                                              for (let x of cars) {
+                                                                text += x;
+                                                              }
+                                                              
+                               2) Looping over a String --->>>
+                                                              let language = "JavaScript";
+                                                              let text = "";
+                                                              for (let x of language) {
+                                                              text += x;
+                                                              }
+
+
