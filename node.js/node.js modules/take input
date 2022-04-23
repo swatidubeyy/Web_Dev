@@ -1,0 +1,9 @@
+
+let input = process.argv[2]
+console.log(input)
+
+Why 2 is in array ----->>>
+              Because we can put input at the second index only as we know that---->>>>>>
+                                                                                          0th index will be node
+                                                                                          1st index will be file name which will be going to be executed.
+                                                                                          2nd index for our input which we want
