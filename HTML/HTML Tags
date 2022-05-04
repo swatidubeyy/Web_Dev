@@ -439,6 +439,41 @@ S
                     
 <svg>	------->>>>>>>>>  
                     It is used as container of SVG (Scalable Vector Graphics).
+                    
+Input ---->>>                    
+                    <table>
+                           <thead>
+                               <tr>
+                                   <th>heading 1</th>
+                                   <th>heading 2</th>
+                                   <th>heading 3</th>
+                               </tr>
+                               <tbody>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                               </tbody>
+                           </thead>
+                     </table>
+
+output ---->>>  
+              heading 1	heading 2	heading 3
+              coloumn 1	coloumn 1	coloumn 1
+              coloumn 1	coloumn 1	coloumn 1
+              coloumn 1	coloumn 1	coloumn 1
+
 
 
 
@@ -449,11 +484,32 @@ T
 <table>	------->>>>>>>>>  
                     It is used to present data in tabular form or to create a table within HTML document.
                     
+                    
+                    
 <tbody>	------->>>>>>>>>  
                     It represents the body content of an HTML table and used along with <thead> and <tfoot>.
                     
+                               <tbody>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                               </tbody>
+                    
 <td>	------->>>>>>>>>  
                     It is used to define cells of an HTML table which contains table data
+                    <td>coloumn 1</td>
                     
 <template>	------->>>>>>>>>  
                     It is used to contain the client side content which will not display at time of page load and may render later using JavaScript.
@@ -466,9 +522,35 @@ T
                     
 <th>	------->>>>>>>>>  
                     It defines the head cell of an HTML table.
+                    <th>heading 1</th> //heading
                     
 <thead>	------->>>>>>>>>  
                     It defines the header of an HTML table. It is used along with <tbody> and <tfoot> tags.
+                    
+                    <thead>
+                               <tr>
+                                   <th>heading 1</th>
+                                   <th>heading 2</th>
+                                   <th>heading 3</th>
+                               </tr>
+                               <tbody>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                            <td>coloumn 1</td>
+                                        </tr>
+                               </tbody>
+                    </thead>
                     
 <time> ------->>>>>>>>>  
                     HTML Tags List	It is used to define data/time within an HTML document.
@@ -479,6 +561,12 @@ T
                     
 <tr>	------->>>>>>>>>  
                     It defines the row cells in an HTML table
+                    
+                    <tr>
+                           <td>coloumn 1</td>
+                           <td>coloumn 1</td>
+                           <td>coloumn 1</td>
+                     </tr>
                     
 <track>	------->>>>>>>>>  
                     It is used to define text tracks for <audio> and <video> elements.
