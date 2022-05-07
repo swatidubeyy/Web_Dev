@@ -1,0 +1,33 @@
+const cheerio = require("cheerio")
+const request = require('request')
+
+request("https://www.worldometers.info//coronavirus//" , cb)
+
+console.log("Before")
+function cb(error, response, html) {
+    if(error){
+        console.log(error)
+    }else{
+        handleHTML(html)
+    }
+}
+
+function handleHTML(html){
+    const selTool = cheerio.load(html)
+    let countArray = selTool('.maincounter-number span')
+
+    // for(let i = 0 ; i < countArray.length ; i++){
+    //     let data = selTool(countArray[i]).text()
+    //     console.log("Data" , data)
+    // }
+
+    let totalCases = selTool(countArray[0]).text()
+    let totalDeaths = selTool(countArray[1]).text()
+    let totalRecovery = selTool(countArray[2]).text()
+
+    console.log("TotalCases - " + totalCases)
+    console.log("TotalData -   " + totalDeaths)
+    console.log("TotalRecovery - " + totalRecovery)
+
+}
+console.log("after")
