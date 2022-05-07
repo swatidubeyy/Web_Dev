@@ -1,0 +1,33 @@
+A callback is a function passed as an argument to another function
+This technique allows a function to call another function
+A callback function can run after another function has finished
+
+example -->>> 
+              function firstName(firstname , cb){
+                  console.log(firstname)
+                  cb("Dubey")
+              }
+
+              function lastName(lastname){
+                  console.log(lastname)
+              }
+
+              firstName("Swati" , lastName)
+              
+           
+           
+***************************************************************************************Async way of reading files****************************************************           
+           
+const fs = require("fs")
+
+console.log("before")
+
+let ans = fs.readFile("hii.txt",cb)
+function cb(err , data){
+    if(err){
+        console.log(err)
+    }
+    console.log("" + data)
+}
+
+console.log("after")              
