@@ -1,0 +1,13 @@
+Cheerio is an NPM package that allows us to parse HTML using CSS selectors outside of the browser.
+This allows us to leverage existing front-end knowledge when interacting with HTML in NodeJS. 
+CSS selectors can be perfected in the browser, for example using Chrome's developer tools, prior to being used with Cheerio.
+
+Installation -->> npm install cheerio
+
+const cheerio = require('cheerio')
+const $ = cheerio.load('<h2 class="title">Hello world</h2>')
+ 
+$('h2.title').text('Hello there!')
+$('h2').addClass('welcome')
+ 
+$.html()
