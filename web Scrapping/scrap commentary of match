@@ -1,0 +1,21 @@
+const request = require("request")
+const cheerio = require("cheerio")
+
+//request("https://www.espncricinfo.com//series//indian-premier-league-2022-1298423//lucknow-super-giants-vs-mumbai-indians-37th-match-1304083//ball-by-ball-commentary" , cb)
+request("https://www.espncricinfo.com/series/ipl-2020-21-1210595/chennai-super-kings-vs-kings-xi-punjab-53rd-match-1216506/ball-by-ball-commentary",cb)
+
+console.log("Before")
+function cb(error, response, html) {
+    if(error){
+        console.log(error)
+    }else{
+        extract(html)
+    }
+}
+
+function extract(html){
+    let selTool = cheerio.load(html)
+    let eleArray = selTool('.ci-html-content')    
+    let lbc = selTool(eleArray[10]).text()
+    console.log(lbc)
+}
