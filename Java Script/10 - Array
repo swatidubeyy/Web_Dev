@@ -244,7 +244,27 @@ Finding Max and Min Values in an Array --->>>
                                               There are no built-in functions for finding the highest or lowest value in a JavaScript array.
                                               
                                               
+include() method --->>>
+                        In JavaScript, includes() method determines whether a string or aaray contains the given characters within it or not. 
+                        This method returns true if the string contains the characters, otherwise, it returns false. 
+                        
+           Note: The includes() method is case sensitive i.e, it will treat the Uppercase characters and Lowercase characters differently.   
+           
+           example --->>> 
+                          let array1 = [1,2,3,4,5]
+                          let array2 = [0,1,6,2,3,4,5,9]
+
+                          for(let i = 0 ; i < array2.length ; i++){
+                              let ispresent = array1.includes(array2[i])
+                              if(ispresent == false){
+                                  array1.push(array2[i])
+                              }
+                          }
+                          console.log(array1)
                                               
                                               
                                               
                                               
+                                              
+                                              
+                                             
