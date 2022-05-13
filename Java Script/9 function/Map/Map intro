@@ -1,0 +1,23 @@
+*************************************************************************** Example of map ******************************************************************************
+
+The map() method creates a new array with the results of calling a function for every array element. 
+The map() method calls the provided function once for each element in an array, in order. 
+Note: map() does not execute the function for array elements without values.
+
+example  --->>> 
+                let array = [1,2,3,4,5]
+
+                function square(x){
+                    return x*x
+                }
+
+                function cuber(x){
+                    return x*x *x
+                }
+
+                let ans = array.map(square)
+                console.log(ans)
+                ans = array.map(cuber)
+                console.log(ans)
+
+                console.log(array)
