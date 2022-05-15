@@ -1,11 +1,3 @@
-
-
-reference ---->>>>>>>> https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-filter-method-to-extract-data-from-an-array
-
-
-
-
-
 // The global variable
 const watchList = [
     {
@@ -140,8 +132,10 @@ function mfun(moviee){
     return obj
 }
 
-let ans = watchList.filter(chotaFun)
+// let ans = watchList.filter(chotaFun)
 //console.log(ans)
 
-let res = ans.map(mfun)
+// let res = ans.map(mfun)
+
+let res = watchList.filter(chotaFun).map(mfun)
 console.log(res)
