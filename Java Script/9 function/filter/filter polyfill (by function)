@@ -1,0 +1,27 @@
+let array = [1,2,3,4,5]
+
+function oddTest(n){
+    return n % 2 == 1
+}
+
+function evenTest(n){
+    return n % 2 == 0
+}
+
+
+function myFilter(array , cb){
+    let newArray = []
+    for(let i = 0 ; i < array.length ; i++){
+        let ans = cb(array[i])
+        if(ans){
+            newArray.push(array[i])
+        }
+    }
+    return newArray
+}
+
+let res =  myFilter(array , oddTest)
+console.log(res)
+
+res =  myFilter(array , evenTest)
+console.log(res)
