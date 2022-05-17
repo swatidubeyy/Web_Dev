@@ -1,0 +1,32 @@
+let array = [2,3,4,5,6,7]
+
+function oddTest(n){
+    return n % 2 == 1
+}
+
+function evenTest(n){
+    return n % 2 == 0
+}
+
+// console.log(array.filter(oddTest))
+// console.log(array.filter(evenTest))
+
+Array.prototype.myFilter =  function(cb){
+    let newArray = []
+    for(let i = 0 ; i < this.length ; i++){
+        if(cb(this[i])){
+            newArray.push(this[i])
+        }
+    }
+    return newArray
+}
+
+console.log(array.myFilter(oddTest))
+console.log(array.myFilter(evenTest))
+
+******************************************************************To impliment more datatype*******************************************************
+
+to impliment more methods of data type follow the link which is given below
+
+
+reference -->>>>>>>>>>   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
