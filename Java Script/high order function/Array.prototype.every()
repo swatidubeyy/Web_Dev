@@ -1,0 +1,24 @@
+************************************************************* every *******************************************************
+
+function chhotaFunction(n){
+    return n < 40
+}
+
+Array.prototype.MyEvery = function(element){
+    let i = 0
+    while(i < this.length){
+        if(element(this[i])){
+            i++
+        }else{
+            return false
+        }
+        
+    }
+    return true
+}
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.MyEvery(chhotaFunction));
+
+expected output: true
