@@ -1,0 +1,102 @@
+******************************************************************************Prototype*******************************************************************************
+
+The Object.prototype is on the top of the prototype inheritance chain: 
+Date objects, Array objects, and Person objects inherit from Object.prototype. 
+Sometimes you want to add new properties (or methods) to all existing objects of a given type. 
+Sometimes you want to add new properties (or methods) to an object constructor.
+
+
+
+All JavaScript objects inherit properties and methods from a prototype.
+
+Prototype Inheritance --->>
+                            All JavaScript objects inherit properties and methods from a prototype:
+
+                            Date objects inherit from Date.prototype
+                            Array objects inherit from Array.prototype
+                            Person objects inherit from Person.prototype
+                            The Object.prototype is on the top of the prototype inheritance chain:
+
+                            Date objects, Array objects, and Person objects inherit from Object.prototype.
+
+
+
+Adding Properties and Methods to Objects --->>>>>>
+                                          Sometimes you want to add new properties (or methods) to all existing objects of a given type.
+
+                                          Sometimes you want to add new properties (or methods) to an object constructor.
+
+
+
+Using the prototype Property --->>>
+                                    The JavaScript prototype property allows you to add new properties to object constructors:
+
+                                    Example --->>>>>
+                                                    function Person(first, last, age, eyecolor) {
+                                                      this.firstName = first;
+                                                      this.lastName = last;
+                                                      this.age = age;
+                                                      this.eyeColor = eyecolor;
+                                                    }
+                                                    Person.prototype.nationality = "English";
+                                    
+                                    
+                                    
+The JavaScript prototype property also allows you to add new methods to objects constructors:
+
+Example ------->>>>>>
+                      function Person(first, last, age, eyecolor) {
+                        this.firstName = first;
+                        this.lastName = last;
+                        this.age = age;
+                        this.eyeColor = eyecolor;
+                      }
+                      Person.prototype.name = function() {
+                        return this.firstName + " " + this.lastName;
+                      };
+
+
+
+
+NOTE ------>>>>>>>>>>>>>>  Only modify your own prototypes. Never modify the prototypes of standard JavaScript objects.
+
+
+
+
+
+************************************************************************Exercise(Practice)****************************************************************************
+
+this ---->>>>>>>> is a predefined keyword in js that referes to the (entity) that is calling a method
+
+// Array.prototype.sayHii = function(ele){
+//     console.log("heloo" , ele)
+// }
+
+Array.prototype.sum = function(){
+    let sum = 0
+    for(let i = 0 ; i < this.length ; i++){
+        sum += this[i]
+    }
+    return console.log("sum is ",sum)
+}
+
+Array.prototype.prod = function(){
+    let prod = 1
+    for(let i = 0 ; i < this.length ; i++){
+        prod *= this[i]
+    }
+    return console.log("Product is ",prod)
+}
+
+let arr1 = [2,21]
+let arr2 = [7,4]
+
+arr1.sum()
+arr2.sum()
+
+arr1.prod()
+arr2.prod()
+
+
+
+
