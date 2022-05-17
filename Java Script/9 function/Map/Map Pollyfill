@@ -18,3 +18,12 @@ Array.prototype.myMap = function(cb){
 
 console.log(array.myMap(squirer))
 console.log(array.myMap(cuber))
+
+
+
+******************************************************************To impliment more datatype*******************************************************
+
+to impliment more methods of data type follow the link which is given below
+
+
+reference -->>>>>>>>>>   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
