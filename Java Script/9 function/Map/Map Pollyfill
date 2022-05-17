@@ -1,0 +1,20 @@
+array = [1,2,3,4,5]
+
+function squirer(n){
+    return n*n
+}
+function cuber(n){
+    return n*n*n
+}
+
+Array.prototype.myMap = function(cb){
+    let res = []
+    for(let i = 0 ; i < this.length ; i++){
+        let ans = cb(this[i])
+        res.push(ans)
+    }
+    return res
+}
+
+console.log(array.myMap(squirer))
+console.log(array.myMap(cuber))
