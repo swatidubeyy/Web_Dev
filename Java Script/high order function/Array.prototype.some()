@@ -1,0 +1,28 @@
+*********************************************************** Some ***********************************************************
+
+The some() method tests whether at least one element in the array passes the test implemented by the provided function.
+It returns true if, in the array, it finds an element for which the provided function returns true; 
+otherwise it returns false. It doesn't modify the array.
+
+
+Exercise --->>>
+                function chhotaFunction(n){
+                    return n < 40
+                }
+
+                Array.prototype.MyEvery = function(element){
+                    let i = 0
+                    while(i < this.length){
+                        if(element(this[i])){
+                            return true
+                        }else{
+                            return false
+                        }        
+                    }
+                    i++
+                }
+                const array1 = [50 , 60 , 70];
+
+                console.log(array1.MyEvery(chhotaFunction));
+
+                console.log(array1)
