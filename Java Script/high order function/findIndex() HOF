@@ -1,0 +1,25 @@
+*************************************************** Find Index **********************************************************
+
+
+The findIndex() method returns the index of the first element in the array that satisfies the provided testing function.
+Otherwise, it returns -1, indicating that no element passed the test.
+
+
+exercise -->>>>
+
+                const array1 = [5, 12, 8, 130, 44 ,78 ,20];
+
+                let ele = 44 ;
+
+                Array.prototype.MyfindIndex = function(ele){
+
+                    for(let i = 0 ; i < this.length ; i++){
+                        if(this[i] == ele){
+                            return i;
+                        }
+                    }
+                    return -1  
+                }
+
+                console.log(array1.MyfindIndex(ele));
+
