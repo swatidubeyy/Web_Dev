@@ -1,0 +1,20 @@
+****************************************************** for each *********************************************************
+
+
+The forEach() method executes a provided function once for each array element.
+
+
+Exercise --->>>>>
+                const array1 = ['a', 'b', 'c'];
+
+                function element(n){
+                    return console.log(n)
+                }
+
+                Array.prototype.myForEach = function(ele){
+                    for(let i = 0 ; i < this.length ; i++){
+                         ele(this[i])
+                    }
+                }
+
+                array1.myForEach(element)
