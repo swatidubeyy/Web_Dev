@@ -1,0 +1,23 @@
+
+Select an element that directly follows another element
+A + B
+This selects all B elements that directly follow A. Elements that follow one another are called siblings. They're on the same level, or depth.
+
+In the HTML markup for this level, elements that have the same indentation are siblings.
+
+
+Example --->>>  Select every apple that's next to a plate
+
+            <div class="table">
+            <bento>
+            <apple class="small" />
+            </bento>
+            <plate />
+            <apple class="small" />
+            <plate />
+            <apple />
+            <apple class="small" />
+            <apple class="small" />
+            </div>
+
+ans ---->>>  plate + apple
