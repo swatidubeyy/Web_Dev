@@ -1,0 +1,25 @@
+
+Select direct children of an element
+A > B 
+You can select elements that are direct children of other elements. A child element is any element that is nested directly in another element.
+
+Elements that are nested deeper than that are called descendant elements.
+
+exaple --->>>
+
+            <div class="table">
+            <plate>
+            <bento>
+            <apple />
+            </bento>
+            </plate>
+            <plate>
+            <apple />
+            </plate>
+            <plate />
+            <apple />
+            <apple class="small" />
+            </div>
+
+
+ans --->>> plate>apple
