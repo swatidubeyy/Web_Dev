@@ -1,0 +1,25 @@
+
+Select an element that are the only element inside of another one.
+:only-child
+You can select any element that is the only element inside of another one.
+
+Example --->>> Select the apple and the pickle on the plates
+
+              <div class="table">
+              <plate>
+              <apple />
+              </plate>
+              <plate>
+              <pickle />
+              </plate>
+              <bento>
+              <pickle />
+              </bento>
+              <plate>
+              <orange class="small" />
+              <orange />
+              </plate>
+              <pickle class="small" />
+              </div>
+
+ans --->>> plate>:only-child
