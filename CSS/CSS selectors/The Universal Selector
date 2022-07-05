@@ -1,0 +1,21 @@
+
+You can select everything!
+*
+You can select all elements with the universal selector!
+
+example --->>>  Select all the things!
+
+              <div class="table">
+              <apple />
+              <plate>
+              <orange class="small" />
+              </plate>
+              <bento />
+              <bento>
+              <orange />
+              </bento>
+              <plate id="fancy" />
+              </div>
+
+
+ans --->>> *
