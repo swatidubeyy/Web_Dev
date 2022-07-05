@@ -1,0 +1,21 @@
+
+A  *
+This selects all elements inside of A.
+
+
+example --->>> Select everything on a plate
+
+            <div class="table">
+            <plate id="fancy">
+            <orange class="small" />
+            </plate>
+            <plate>
+            <pickle />
+            </plate>
+            <apple class="small" />
+            <plate>
+            <apple />
+            </plate>
+            </div>
+
+ans --->>> plate>*
