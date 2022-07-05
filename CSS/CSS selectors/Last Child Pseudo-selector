@@ -1,0 +1,24 @@
+
+Select the last element inside of another element
+:last-child
+You can use this selector to select an element that is the last child element inside of another element.
+
+Pro Tip → In cases where there is only one element, that element counts as the first-child, only-child and last-child!
+
+
+example --->> Select the small apple and the pickle
+
+            <div class="table">
+            <plate id="fancy">
+            <apple class="small" />
+            </plate>
+            <plate />
+            <plate>
+            <orange class="small" />
+            <orange />
+            </plate>
+            <pickle class="small" />
+            </div> 
+ 
+ 
+ans --->> .small:last-child
