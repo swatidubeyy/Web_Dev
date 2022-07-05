@@ -1,0 +1,20 @@
+
+Select all elements with an attribute value that ends with specific characters
+[attribute$="value"]
+
+
+Example --->>>> Select the items for names that end with 'ato'
+
+              <div class="table">
+              <apple class="small" />
+              <bento for="Hayato">
+              <pickle />
+              </bento>
+              <apple for="Ryota" />
+              <plate for="Minato">
+              <orange />
+              </plate>
+              <pickle class="small" />
+              </div>
+
+ans --->>> bento[for],plate[for]
