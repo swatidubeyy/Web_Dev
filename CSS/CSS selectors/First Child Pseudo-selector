@@ -1,0 +1,21 @@
+
+Select a first child element inside of another element
+:first-child
+You can select the first child element. A child element is any element that is directly nested in another element.
+You can combine this pseudo-selector with other selectors.
+
+Example --->>> Select the top orange
+
+              <div class="table">
+                <bento />
+              <plate />
+              <plate>
+              <orange />
+              <orange />
+              <orange />
+              </plate>
+              <pickle class="small" />
+              </div>
+
+
+ans --->>> orange:first-child
