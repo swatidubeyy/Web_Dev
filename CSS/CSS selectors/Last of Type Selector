@@ -1,0 +1,20 @@
+
+Select the last element of a specific type
+:last-of-type
+Selects each last element of that type within another element. Remember type refers the kind of tag, so p and span are different types.
+
+I wonder if this is how the last dinosaur was selected before it went extinct.
+
+
+Example --->>> Select the last apple and orange
+
+            <div class="table">
+            <orange class="small" />
+            <orange class="small" />
+            <pickle />
+            <pickle />
+            <apple class="small" />
+            <apple class="small" />
+            </div>
+
+ans --->> .small:last-of-type
