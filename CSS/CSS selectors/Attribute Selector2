@@ -1,0 +1,24 @@
+
+Select all elements that have a specific attribute
+[attribute]
+Attributes appear inside the opening tag of an element, like this: span attribute="value". An attribute does not always have a value, it can be blank!
+
+
+
+Example ---->>> Select the items for someone
+
+              <div class="table">
+              <bento>
+              <apple class="small" />
+              </bento>
+              <apple for="Ethan" />
+              <plate for="Alice">
+              <pickle />
+              </plate>
+              <bento for="Clara">
+              <orange />
+              </bento>
+              <pickle />
+              </div>
+
+ans --->>> *[for]
