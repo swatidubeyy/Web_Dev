@@ -1,0 +1,15 @@
+
+Select an element by its order in another element
+:nth-child(A)
+Selects the nth (Ex: 1st, 3rd, 12th etc.) child element in another element.
+
+Example --->>>  Select the 3rd plate
+
+            <div class="table">
+            <plate />
+            <plate />
+            <plate />
+            <plate id="fancy" />
+            </div>
+
+ans --->>> :nth-child(3)
