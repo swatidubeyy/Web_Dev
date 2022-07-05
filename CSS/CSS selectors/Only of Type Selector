@@ -1,0 +1,23 @@
+
+
+Select elements that are the only ones of their type within of their parent element
+:only-of-type
+Selects the only element of its type within another element.
+
+
+Example --->>> Select the apple on the middle plate
+
+              <div class="table">
+              <plate id="fancy">
+              <apple class="small" />
+              <apple />
+              </plate>
+              <plate>
+              <apple class="small" />
+              </plate>
+              <plate>
+              <pickle />
+              </plate>
+              </div>
+
+ans --->>> apple:only-of-type
