@@ -1,0 +1,26 @@
+
+Combine, selectors, with... commas!
+A, B
+Thanks to Shatner technology, this selects all A and B elements. You can combine any selectors this way, and you can specify more than two.
+
+
+example -->>>> Select all the plates and bentos
+
+              <div class="table">
+              <pickle class="small" />
+              <pickle />
+              <plate>
+              <pickle />
+              </plate>
+              <bento>
+              <pickle />
+              </bento>
+              <plate>
+              <pickle />
+              </plate>
+              <pickle />
+              <pickle class="small" />
+              </div>
+              
+              
+ans --->>> plate,bento      
