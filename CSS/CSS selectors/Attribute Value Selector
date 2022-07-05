@@ -1,0 +1,20 @@
+
+Select all elements that have a specific attribute value
+[attribute="value"]
+Attribute selectors are case sensitive, each character must match exactly.
+
+
+Example ---->>> Select Vitaly's meal
+
+              <div class="table">
+              <apple for="Alexei" />
+              <bento for="Albina">
+              <apple />
+              </bento>
+              <bento for="Vitaly">
+              <orange />
+              </bento>
+              <pickle />
+              </div>
+
+ans --->>> bento[for="Vitaly"]
