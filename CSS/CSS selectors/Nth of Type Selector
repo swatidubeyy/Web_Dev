@@ -1,0 +1,16 @@
+
+:nth-of-type(A)
+Selects a specific element based on its type and order in another element - or even or odd instances of that element.
+
+Example ---->> Select all even plates
+
+            <div class="table">
+            <plate />
+            <plate />
+            <plate />
+            <plate />
+            <plate id="fancy" />
+            <plate />
+            </div>
+
+ans --->>> plate:nth-of-type(even)
