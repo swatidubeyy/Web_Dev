@@ -1,0 +1,17 @@
+
+Select elements that don't have children
+:empty
+Selects elements that don't have any other elements inside of them.
+
+Example ----->>>> Select the empty bentos
+
+                <div class="table">
+                <bento />
+                <bento>
+                <pickle class="small" />
+                </bento>
+                <plate />
+                <bento />
+                </div>
+
+ans ---->>>> bento:empty
