@@ -1,0 +1,22 @@
+
+Select the first element of a specific type
+:first-of-type
+Selects the first element of that type within another element.
+
+
+Example --->>> Select first apple
+
+            <div class="table">
+            <orange class="small" />
+            <apple />
+            <apple class="small" />
+            <apple />
+            <apple class="small" />
+            <plate>
+            <orange class="small" />
+            <orange />
+            </plate>
+            </div>
+
+
+ans --->>> apple:first-of-type
