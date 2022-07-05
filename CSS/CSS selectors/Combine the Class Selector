@@ -1,0 +1,21 @@
+A.className
+You can combine the class selector with other selectors, like the type selector.
+
+
+example ---->>>> Select the small oranges
+
+                <div class="table">
+                <apple />
+                <apple class="small" />
+                <bento>
+                <orange class="small" />
+                </bento>
+                <plate>
+                <orange />
+                </plate>
+                <plate>
+                <orange class="small" />
+                </plate>
+                </div>
+                
+ans -->>> orange.small                
