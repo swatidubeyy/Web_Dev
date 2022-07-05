@@ -1,0 +1,20 @@
+
+Select an element by its order in another element, counting from the back
+:nth-last-child(A)
+Selects the children from the bottom of the parent. This is like nth-child, but counting from the back!
+
+
+Example --->> Select the 1st bento
+
+            <div class="table">
+            <plate />
+            <bento />
+            <plate>
+            <orange />
+            <orange />
+            <orange />
+            </plate>
+            <bento />
+            </div>
+
+ans --->>> bento:nth-last-child(3)
